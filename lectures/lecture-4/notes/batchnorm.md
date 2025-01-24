@@ -17,4 +17,10 @@ Modern Innovation:
 - there is batch normalization running to save the result of the batch normalization in training, so its for normalizing the data for the testing because batch normalization in training is a bit noisy so we need accumulate bit by bit
 - batch normalization have its own bias, so bias before batch normalization is not needed and will not impact anything after bn
 - BN usually used after mathematical layer like convolutional and matrix multiplication layer for smoothing result
+- people don't like this layer because it cause many bugs -> group normalization is some of the solution for this
+- batch normalization is fightin the tanh squeezing problem, with batch normalization, it will make sure standard devaiation in reasonable point
 
+
+# Residual Network (ResNet)
+- usually the structure is linear layer (matmux), batch normalization, and non linear layer (relu)
+- resnet introduce skip connections which help vanishing gradient problem so one of the layer is not going throught all activation function and can skip to some specific layer and give a big impact to the result
