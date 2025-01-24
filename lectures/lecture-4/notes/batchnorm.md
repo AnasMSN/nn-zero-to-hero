@@ -15,3 +15,6 @@
 Modern Innovation:
 - Batch Normalization (2015): we can train Deep neural network and work properly -> how? because in each layer, it will normalize result of each input the normalize data is still give impact in the gradient function in the backpropagation 
 - there is batch normalization running to save the result of the batch normalization in training, so its for normalizing the data for the testing because batch normalization in training is a bit noisy so we need accumulate bit by bit
+- batch normalization have its own bias, so bias before batch normalization is not needed and will not impact anything after bn
+- BN usually used after mathematical layer like convolutional and matrix multiplication layer for smoothing result
+
